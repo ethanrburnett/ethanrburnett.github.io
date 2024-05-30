@@ -35,6 +35,9 @@ layout: default
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
         {% endif %}
+        {% if page.profile.cv_link %}
+            <p><a href="{{ page.profile.cv_link }}" target="_blank"><b>Download CV</b></a></p>
+        {% endif %}
       </div>
     {% endif %}
 

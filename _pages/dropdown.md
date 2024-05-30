@@ -1,16 +1,14 @@
 ---
 layout: page
-title: submenus
+title: more
 nav: true
 nav_order: 8
 dropdown: true
 children:
-  - title: publications
-    permalink: /publications/
-  - title: divider
-  - title: projects
+  - title: portfolio
     permalink: /projects/
   - title: divider
-  - title: blog
-    permalink: /blog/
+  - title: teaching
+    permalink: /teaching/
+# NOTE, adding for example "git stuff" with permalink /repositories/, it is possible to see elements previously removed from the nav bar as in nav: false
 ---
