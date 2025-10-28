@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://ethanrburnett.github.io/sitemap.xml
