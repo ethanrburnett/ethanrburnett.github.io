@@ -1,7 +1,7 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for Ethan Burnett at 2024-05-31 00:57:44 +0200 
+%% Created for Ethan Burnett at 2025-10-27 23:08:33 +0100 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -10,34 +10,76 @@
 @string{aps = {American Physical Society,}}
 
 
+@article{monomial2025,
+	abstract = {This paper introduces a monomial method for rapidly solving a variety of nonlinear optimization problems astrodynamics. Using differential algebra to compute Taylor expansions of given nonlinear functions, the result is a function of multivariate monomials up to the order of truncation. These monomials are interrelated. We use this fact to approximate nonlinear functions in Euclidean space by linear functions on a Riemannian manifold, wherein the problem can be solved with speed and stability, leveraging numerical schemes for optimization on manifolds. The method could prove advantageous in contexts requiring the repeated solution of similar optimization problems, for which the expansion can be reused, or for particularly tricky optimization problems where a combination of rapid sampling and gradient-based methods need to be used. In this introductory work we lay the foundations and explore two simple example applications: 1) computing periodic orbits, and 2) computing/continuing optimal impulsive transfers.},
+	author = {Ethan R. Burnett and Francesco Topputo},
+	booktitle = {AAS Spaceflight Mechanics Meeting},
+	date-added = {2025-10-27 23:02:32 +0100},
+	date-modified = {2025-10-27 23:08:15 +0100},
+	google_scholar_id = {QIV2ME_5wuYC},
+	html = {https://re.public.polimi.it/bitstream/11311/1285579/1/BURNE02-25.pdf},
+	journal = {AAS Spaceflight Mechanics Meeting, paper AAS 25-218},
+	month = {January},
+	number = {AAS 25-218},
+	organization = {American Astronautical Society},
+	title = {A Monomial Method for Nonlinear Optimization in Astrodynamics},
+	year = {2025}}
+
+@article{astro2025,
+	abstract = {The Moon will play a central role in upcoming human space exploration efforts, with numerous missions planned in the near future. Designing trajectories for spacecraft in the cislunar region requires advanced methods that account for the dynamics of complex multi-body systems. This work presents a sequential convex programming (SCP) framework for optimizing both impulsive and continuous-thrust trajectories within the restricted three- and four-body models, with a subsequent transition to high-fidelity ephemeris models. 
+We employ a pulsating-rotating frame, use a homotopic approach and leverage the Sundman transformation to improve convergence. The proposed method is demonstrated through simulations in the Sun-perturbed Earth--Moon system and the Moon-perturbed Sun--Earth system. 
+The high accuracy and robustness make SCP an excellent choice even for solving highly nonlinear problems.},
+	author = {Christian Hofmann and Hakan Chunton and Kai Xi and Giovanni Lavezzi and Ethan R. Burnett and Francesco Topputo and Richard Linares},
+	date-added = {2025-10-27 22:57:17 +0100},
+	date-modified = {2025-10-27 23:00:33 +0100},
+	journal = {(submitted to Astrodynamics)},
+	title = {{Trajectory Design in Multi-Body Models via Homotopic Convex Optimization}},
+	year = {2025}}
+
+@article{regantini2025,
+	abstract = {This paper proposes a nonlinear guidance algorithm for fuel-optimal impulsive trajectories for rendezvous operations close to a reference orbit. The approach involves overparameterized monomial coordinates and a high-order approximation of the dynamic flow precomputed using Differential Algebra, which eliminates the need for real-time integration. To address non-convexity in the monomial coordinate formulation of the guidance problem, Sequential Convex Programming is applied. Using the methodology presented in this paper, repeatedly evaluating the nonlinear dynamics is not necessary, as in shooting or collocation methods. Instead, only the monomial equations require updating between iterations, drastically reducing computational burden. The proposed algorithm is tested in the Circular Restricted Three-Body Problem framework with the target spacecraft on a Near-Rectilinear Halo Orbit. The results demonstrate stability, efficiency, and low computational demand while achieving minimal terminal guidance errors. Compared to linear methods, this nonlinear convex approach exhibits superior performance in open-loop propagation of impulsive maneuvers in cislunar space, particularly in terms of accuracy. These advantages make the algorithm an attractive candidate for autonomous onboard guidance for rendezvous operations in the cislunar domain.},
+	author = {Omar Regantini and Ethan R Burnett and Antonio Rizza and Alessandro Morselli and Francesco Topputo},
+	date-added = {2025-10-27 22:49:21 +0100},
+	date-modified = {2025-10-27 23:08:33 +0100},
+	doi = {10.48550/arXiv.2505.07521},
+	google_scholar_id = {L8Ckcad2t8MC},
+	html = {https://arxiv.org/abs/2505.07521},
+	journal = {arXiv preprint (submitted to JGCD)},
+	title = {{Convex Trajectory Optimization via Monomial Coordinates Transcription for Cislunar Rendezvous}},
+	year = {2025}}
+
 @article{burnett2024rapid,
-	abstract = {This paper introduces a framework by which the nonlinear trajectory optimization problem is posed as a path-planning problem in a space liberated of dynamics. In this space, general state constraints for continuous and impulsive control problems are encoded as linear constraints on the native overparameterized variables. This framework is enabled by nonlinear expansion in the vicinity of a reference in terms of fundamental solutions and a minimal nonlinear basis of mixed monomials in problem initial conditions. The former can be computed using state transition tensors, differential algebra, or analytic approaches, and the latter is computed analytically. Nonlinear guidance schemes are proposed taking advantage of this framework, including a successive convex programming scheme for delta-V minimizing trajectory optimization. This work enables a stable, easy to implement, and highly rapid nonlinear guidance implementation without the need for collocation or real-time integration.},
+	abstract = {This paper addresses the challenge of accommodating nonlinear dynamics and constraints in rapid trajectory optimization with impulsive maneuvers, envisioned for use in the context of onboard guidance. We present a novel framework that uniquely employs overparameterized monomial coordinates and precomputed fundamental solution expansions to facilitate rapid optimization while minimizing real-time computational requirements. The fundamental solution expansions are precomputed about an uncontrolled reference trajectory using differential algebra. Unlike traditional approaches that repeatedly evaluate the nonlinear dynamics and constraints as part of complex shooting or collocation-based schemes, this method replaces the nonlinearity inherent to dynamics and constraint functions entirely with a computationally simpler manifold constraint. With this approach, trajectory optimization is posed efficiently as a path-planning problem on the manifold. This problem is entirely convex except for the manifold constraint, readily lending itself to solution via sequential convex programming. We demonstrate the effectiveness of our approach in computing fast and accurate delta-V optimal solutions for long-range spacecraft rendezvous, including problems with nonlinear state constraints.},
 	archiveprefix = {arXiv},
 	author = {Ethan R. Burnett and Francesco Topputo},
 	date-added = {2024-05-30 20:46:48 +0200},
-	date-modified = {2024-05-30 20:53:16 +0200},
+	date-modified = {2025-10-27 22:54:51 +0100},
+	doi = {10.2514/1.G008512},
 	eprint = {2403.19324},
 	google_scholar_id = {Wp0gIr-vW9MC},
 	html = {https://arxiv.org/abs/2403.19324},
-	journal = {arXiv preprint (submitted to JGCD)},
-	month = {May},
+	journal = {Journal of Guidance, Control, and Dynamics},
+	month = {April},
+	number = {4},
 	primaryclass = {math.OC},
 	title = {Rapid nonlinear convex guidance using a monomial method},
-	year = {2024}}
+	volume = {48},
+	year = {2025}}
 
 @article{Burnett:EGU24,
 	author = {Ethan R. Burnett and Iosto Fodde and Fabio Ferrari},
-	booktitle = { EGU General Assembly 2024, Vienna, Austria},
+	booktitle = {EGU General Assembly 2024, Vienna, Austria},
 	date-added = {2024-05-30 20:37:43 +0200},
-	date-modified = {2024-05-31 00:57:43 +0200},
+	date-modified = {2025-10-27 22:46:20 +0100},
 	doi = {10.5194/egusphere-egu24-17927},
 	google_scholar_id = {4DMP91E08xMC},
 	html = {https://doi.org/10.5194/egusphere-egu24-17927},
-	journal = { EGU General Assembly, abstract EGU24-17927},
+	journal = {EGU General Assembly, abstract EGU24-17927},
 	month = {Apr},
 	number = {EGU24-17927},
-	title = {🪐Numerical inference of viscoelastic properties in tidal models of rubble pile asteroids},
-	year = {2024}}
+	title = {🪐 Numerical inference of viscoelastic properties in tidal models of rubble pile asteroids},
+	year = {2024},
+	bdsk-url-1 = {https://doi.org/10.5194/egusphere-egu24-17927}}
 
 @article{Burnett:2020aa,
 	abstract = {This paper explores an alternative interpolation approach for the line-of-sight measurements in Laplace's method for angles-only initial orbit determination (IOD). The classical implementation of the method uses Lagrange polynomials to interpolate three or more unit line-of-sight (LOS) vectors from a ground-based or orbiting site to an orbiting target. However, such an approach does not guarantee unit magnitude of the interpolated line-of-sight path except at the measurement points. The violation of this constraint leads to unphysical behavior in the derivatives of the interpolated line-of-sight history, which can lead to poor initial orbit determination (IOD) performance. By adapting a spherical interpolation method used in the field of computer graphics, we can obtain an interpolated line-of-sight history that is always unit norm. This new spherical interpolation method often leads to significant performance improvements in Laplace's IOD method, with comparable robustness to measurement noise as the traditional interpolation methods. This paper also demonstrates the benefit of interpolating through more than three data points, which is easily enabled up to an arbitrary number of measurements by recursive definitions of the interpolations.},
@@ -125,7 +167,7 @@
 	abstract = {The Saturnian moon Enceladus presents a unique opportunity to sample the contents of a subsurface liquid water ocean in situ via the continuous plume formed over its south polar terrain using a multi-flyby mission architecture. Previous analyses of the plume's composition by Cassini revealed an energy-rich system laden with salts and organic compounds, representing an environment containing most of the ingredients for life as we know it. Following in the footsteps of the Cassini-Huygens mission, we present Astrobiology eXploration at Enceladus (AXE), a New Frontiers class Enceladus mission concept study carried out during the 2021 NASA Planetary Science Summer School program at the Jet Propulsion Laboratory, California Institute of Technology. We demonstrate that a scientifically compelling geophysical and life-detection mission to Enceladus can be carried out within the constraints of a New Frontiers-5 cost cap using a modest instrument suite, requiring only a narrow angle, high-resolution telescopic imager, a mass spectrometer, and a high-gain antenna for radio communications and gravity science measurements. Using a multi-flyby mission architecture, AXE would evaluate the habitability and potential for life at Enceladus through a synergistic combination of in situ chemical analysis measurements aimed at directly detecting the presence of molecular biosignatures, along with geophysical and geomorphological investigations to contextualize chemical biosignatures and further evaluate the habitability of Enceladus over geologic time.},
 	author = {K. Marshall Seaton and Szil{\'a}rd Gyalay and Gaia Stucky de Quay and Ethan R. Burnett and C. Adeene Denton and Bryce Doerr and Kamak Ebadi and Stephanie Eckert and Ian. T. W. Flynn and Casey I. Honniball and Shayna Hume and Corbin L. Kling and Julian C. Marohnic and Julia Milton and Claire A. Mondro and Raquel G. Nuno and Caoimhe M. Rooney and Beck E. Strauss and Alfred Nash and Jennifer E. C. Scully},
 	date-added = {2024-05-30 19:51:53 +0200},
-	date-modified = {2024-05-31 00:57:23 +0200},
+	date-modified = {2025-10-27 22:46:26 +0100},
 	doi = {10.3847/PSJ/acd119},
 	google_scholar_id = {_kc_bZDykSQC},
 	html = {https://dx.doi.org/10.3847/PSJ/acd119},
@@ -134,7 +176,7 @@
 	number = {6},
 	pages = {116},
 	publisher = {The American Astronomical Society},
-	title = {🪐Astrobiology eXploration at Enceladus (AXE): A New Frontiers Mission Concept Study},
+	title = {🪐 Astrobiology eXploration at Enceladus (AXE): A New Frontiers Mission Concept Study},
 	url = {https://dx.doi.org/10.3847/PSJ/acd119},
 	volume = {4},
 	year = {2023},
@@ -144,7 +186,7 @@
 	abstract = {Europa is an icy ocean world, differentiated into a floating ice shell and solid interior, separated by a global ocean. The classical spin--orbit coupling problem considers a satellite as a single rigid body, but in the case of Europa, the existence of the subsurface ocean enables independent motion of the ice shell and solid interior. This paper explores the spin--orbit coupling problem for Europa from a dynamical perspective, yielding illuminating analytical and numerical results. We determine that the spin behavior of Europa is influenced by processes not captured by the classical single rigid body spin--orbit coupling analysis. The tidal locking process for Europa is governed by the strength of gravity-gradient coupling between the ice shell and solid interior, with qualitatively different behavior depending on the scale of this effect. In this coupled rigid model, the shell can potentially undergo large angular displacements from the solid interior, and the coupling plays an outsize role in the dynamical evolution of the moon, even without incorporating the dissipative effects of shell non-rigidity. We additionally discuss the effects of a realistic viscoelastic shell, and catalogue other torques that we expect to be sub-dominant in Europa's spin dynamics, or whose importance is unknown. Finally, we explore how the choice of tidal model affects the resulting equilibrium spin state.},
 	author = {Ethan R. Burnett and Paul O. Hayne},
 	date-added = {2024-05-30 19:17:27 +0200},
-	date-modified = {2024-05-31 00:56:33 +0200},
+	date-modified = {2025-10-27 22:46:33 +0100},
 	doi = {10.1016/j.icarus.2023.115731},
 	google_scholar_id = {YOwf2qJgpHMC},
 	html = {https://doi.org/10.1016/j.icarus.2023.115731},
@@ -152,7 +194,7 @@
 	journal = {Icarus},
 	keywords = {Europa, Spin--orbit coupling, Icy ocean worlds, Dynamics, Satellites},
 	pages = {115731},
-	title = {🪐Spin--orbit coupling of Europa's ice shell and interior},
+	title = {🪐 Spin--orbit coupling of Europa's ice shell and interior},
 	url = {https://www.sciencedirect.com/science/article/pii/S0019103523003081},
 	volume = {406},
 	year = {2023},
@@ -163,7 +205,7 @@
 	abstract = {Europa's surface reflectance exhibits a pronounced hemispheric dichotomy, which is hypothesized to form due to enhanced irradiation of the trailing hemisphere by energetic particles entrained in the jovian magnetosphere. We propose that this pattern can only persist if the timescale for discoloration is much shorter than that of Europa's rotation relative to the synchronous state, and provide a means for constraining the rotation rate using the observed color pattern. By decomposing the longitudinal ultraviolet and visible color variations from Voyager data into sine and cosine terms, we find no detectable signature of non-synchronous rotation (NSR). This same conclusion is reached with two observational models of discoloration: one representing an actively discoloring surface, and the other assuming that the present-day exogenic discoloration on the surface is in steady-state. Magnitudes of the expected signature are presented as functions of the age of the crater Pwyll, which is used to constrain the timescale of discoloration. Furthermore, we develop a physical model of discoloration to validate the geometric models, producing consistent results. The failure to identify a signature of NSR using Europa's hemispheric color dichotomy magnifies the outstanding problem of the origin of the stress to explain Europa's pervasive tectonic features.},
 	author = {Ethan R. Burnett and Paul O. Hayne},
 	date-added = {2024-05-30 19:17:06 +0200},
-	date-modified = {2024-05-31 00:57:00 +0200},
+	date-modified = {2025-10-27 22:46:38 +0100},
 	doi = {10.1016/j.icarus.2021.114438},
 	google_scholar_id = {eQOLeE2rZwMC},
 	html = {https://doi.org/10.1016/j.icarus.2021.114438},
@@ -171,7 +213,7 @@
 	journal = {Icarus},
 	keywords = {Europa, Jupiter, Icy satellite, Ocean worlds, Non-synchronous rotation, Tidally locked, Polar wander, Voyager},
 	month = {August},
-	title = {🪐Europa's hemispheric color dichotomy as a constraint on non-synchronous rotation},
+	title = {🪐 Europa's hemispheric color dichotomy as a constraint on non-synchronous rotation},
 	url = {https://www.sciencedirect.com/science/article/pii/S0019103521001214},
 	volume = {364},
 	year = {2021},
