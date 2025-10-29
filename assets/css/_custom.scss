@@ -1,0 +1,192 @@
+// ======================================================================
+// Custom Styles for Ethan Burnett's site
+// This file safely overrides al-folio defaults and is automatically
+// imported into main.scss if placed in assets/css/_custom.scss.
+// ======================================================================
+
+
+
+body {
+  font-weight: 400;
+  color: #222222;       /* softer gray than #0e0e0e, but still readable */
+  letter-spacing: -0.1px
+}
+
+.deadline {
+  color: #b22222; /* firebrick red */
+  font-weight: bold;
+}
+
+/* Make sure the name in the navbar isn't bolded */
+.navbar-name {
+  font-weight: 400 !important;
+}
+
+.research-gallery figcaption {
+  padding: 0.8rem 1rem 0.8rem;
+  font-size: 1rem;
+  color: #222;                /* still readable, not too light */
+  text-align: left;
+  line-height: 1.45;          /* a little tighter overall */
+}
+
+.research-gallery figcaption strong {
+  display: block;
+  color: #111;                /* slightly lighter than pure black */
+  font-size: 1.08rem;         /* still distinct but not oversized */
+  font-weight: 700;           /* bold, not extra-bold */
+  margin-bottom: 0.15rem;     /* closer to the text below */
+}
+
+.section-separator {
+  border: 0;
+  height: 1px;
+  background-color: #BF5700;
+  margin: 2rem 0;
+  opacity: 0.6;
+}
+
+// --- Background gradient (subtle UT-Austin tone) ---
+body.fixed-top-nav {
+  background: linear-gradient(180deg, #fff9f5 0%, #ffffff 80%) !important;
+}
+
+body.layout--publications {
+  background: linear-gradient(180deg, #fffaf7 0%, #ffffff 95%) !important;
+}
+html, body {
+  min-height: 100vh;
+}
+
+// --- Accent underline under name header ---
+.layout--about h1 {
+  border-bottom: 3px solid #bf5700;  // UT Austin burnt orange
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+// --- Paragraph text polish ---
+.layout--about p {
+  line-height: 1.65;
+  font-size: 1.05em;
+  color: #333333;
+}
+
+// --- Link colors (subtle UT accent) ---
+a {
+  color: #bf5700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #a94b00;  // slightly darker on hover
+}
+
+// --- Optional: make the profile image rounder ---
+.layout--about img.profile {
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Remove bold from site name in navbar (safe override) */
+.navbar-brand,
+.navbar-brand strong,
+.navbar-brand b,
+.navbar-brand .font-weight-bold {
+  font-weight: 400 !important;
+}
+
+
+/* Targets subtitle below name on the About page header */
+.layout--about .page-header .page-subtitle,
+.layout--about .subtitle {
+  font-size: 1.25rem !important;   /* clearly larger */
+  font-weight: 550 !important;     /* subtle extra emphasis */
+  color: #222 !important;          /* readable dark gray */
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+/* Keep the UT orange line looking strong */
+.layout--about .page-header .page-subtitle strong[style*="color:#BF5700"] {
+  font-weight: 650 !important;
+}
+
+/* Tighter layout for publications list */
+.bibliography {
+  line-height: 1.1;          /* was ~1.7 */
+  font-size: 0.97rem;        /* optional: slightly smaller text */
+}
+
+.bibliography li {
+  margin-bottom: 0.6rem;     /* reduce vertical gap between items */
+}
+
+/* Make titles stand out a bit more without extra space */
+.bibliography .title {
+  font-weight: 500;
+}
+
+/* Style the publication year headings */
+h2.bibliography {
+  font-size: 1.25rem;     /* slightly larger than entries */
+  font-weight: 500;       /* semi-bold for emphasis */
+  color: #BF5700 !important;  /* UT Austin Burnt Orange */
+  margin-top: 1.8rem;     /* space before each year section */
+  margin-bottom: 0.6rem;  /* tighten space below year */
+  text-transform: none;   /* ensures not all caps */
+}
+
+.research-gallery .dual .image-pair {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;                /* space between the two images */
+  flex-wrap: wrap;          /* stack vertically on small screens */
+}
+
+.research-gallery .dual img {
+  width: 45%;               /* each image takes up ~half width */
+  max-width: 500px;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Row of collaborator logos */
+.logos-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 1.5em 0;
+}
+
+.logos-row img {
+  height: 55px;
+  opacity: 0.9;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.logos-row img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .logos-row img {
+    height: 45px;
+  }
+}
+
+/* --- Individual scaling knobs --- */
+.logo.ua       { height: 65px; }   /* Arizona a bit tall */
+.logo.afrl     { height: 38px; }   /* too visually heavy */
+.logo.cu       { height: 48px; }   /* CU smaller logo */
+.logo.lasp     { height: 60px; }   /* skinny aspect ratio */
+.logo.nasa     { height: 62px; }   /* very circular */
+.logo.jpl      { height: 38px; }   /* too visually heavy */
+.logo.blueorigin { height: 65px; } /* okay baseline */
+.logo.polimi   { height: 82px; }   /* circular seal */
+.logo.mit      { height: 38px; }   /* dense shape */
