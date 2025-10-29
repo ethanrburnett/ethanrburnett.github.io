@@ -36,6 +36,20 @@ From 2023 to 2025 I was a Marie Skłodowska-Curie Postdoctoral Fellow in Italy, 
 
 I maintain also some interest in planetary science, having written or contributed to a few articles in Icarus and the Planetary Science Journal, mostly in collaboration with Prof. Paul Hayne, [CU Boulder LASP](https://lasp.colorado.edu/people/paul-hayne/). 
 
+#### <strong style="color:#BF5700; font-size:1.3rem;">Past & Present Collaborators</strong>
+<div class="logos-row">
+  <img src="/assets/img/univ_arizona.png" alt="University of Arizona" class="logo ua">
+  <img src="/assets/img/afrl_big.png" alt="AFRL" class="logo afrl">
+  <img src="/assets/img/cu_small_logo.png" alt="University of Colorado Boulder" class="logo cu">
+  <img src="/assets/img/lasp.png" alt="LASP" class="logo lasp">
+  <img src="/assets/img/NASA.png" alt="NASA" class="logo nasa">
+  <img src="/assets/img/JPL.png" alt="NASA JPL" class="logo jpl">
+  <img src="/assets/img/BlueOrigin_blue.png" alt="Blue Origin" class="logo blueorigin">
+  <img src="/assets/img/Polimi_Nero.png" alt="Politecnico di Milano" class="logo polimi">
+  <img src="/assets/img/MIT_logo.png" alt="MIT" class="logo mit">
+</div>
+
 #### <strong style="color:#BF5700; font-size:1.3rem;">Collaborate/Join My Group</strong>
 
-I invite prospective students and collaborators to see the Research and Publications tabs to learn more about my work. If this work resonates with your interests or goals, please don't hesitate to send me an email (address on bottom of this page).
+I invite prospective students and collaborators to see the Research and Publications tabs to learn more about my work. If this work resonates with your interests or goals, please don't hesitate to contact me (email address on bottom of this page). IMPORTANT: Prospective students -- please see [Positions](/join/) for more info about how to join.
+<br><br><br>

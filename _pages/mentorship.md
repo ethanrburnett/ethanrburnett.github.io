@@ -9,7 +9,7 @@ nav_order: 4
 
 <hr class="section-separator">
 
-I've had the pleasure of supervising and co-supervising a number of research projects and theses. Below is a non-exhaustive list.
+I've had the pleasure of advising and co-advising a number of research projects and theses. Below is a non-exhaustive list of those I worked with most closely.
 <br><br>
 
 #### <strong style='color:#BF5700'>Graduate Students (M.S.)</strong>
@@ -20,7 +20,7 @@ I've had the pleasure of supervising and co-supervising a number of research pro
   <div style="flex:1;">
     <strong>Omar Regantini</strong> — M.S. thesis, <em>A Differential Algebra-Driven Sequential Convex Guidance Approach for Cislunar Rendezvous.</em><br>
     <span style="color:#555;">Politecnico di Milano — DAER</span><br>
-    Supervisors and co-supervisors: A. Morselli, E. Burnett
+    Advisors and co-advisors: A. Morselli, E. Burnett
   </div>
   <div style="width:120px; text-align:right;"><strong>2024</strong></div>
 </div>
@@ -30,7 +30,7 @@ I've had the pleasure of supervising and co-supervising a number of research pro
   <div style="flex:1;">
     <strong>Mattia Viviani</strong> — M.S. thesis, <em>Leveraging Large Deployable Antennas as Quasi-Sails for CubeSat Missions: A Feasibility Study Using Convex Optimization.</em><br>
     <span style="color:#555;">Politecnico di Milano — DAER</span><br>
-    Supervisors and co-supervisors: A. Morselli, E. Burnett
+    Advisors and co-advisors: A. Morselli, E. Burnett
   </div>
   <div style="width:120px; text-align:right;"><strong>2025</strong></div>
 </div>
@@ -40,7 +40,7 @@ I've had the pleasure of supervising and co-supervising a number of research pro
   <div style="flex:1;">
     <strong>Michael Ferrantino</strong> — M.S. thesis, <em>Computation of Invariant Tori Around Small Bodies Under Solar Radiation Pressure and Gravity Harmonics</em> (working title).<br>
     <span style="color:#555;">Politecnico di Milano — DAER</span><br>
-    Supervisors and co-supervisors: F. Topputo, G. Grossi, E. Burnett
+    Advisors and co-advisors: F. Topputo, G. Grossi, E. Burnett
   </div>
   <div style="width:120px; text-align:right;"><strong>2026</strong></div>
 </div>

@@ -12,6 +12,11 @@ body {
   letter-spacing: -0.1px
 }
 
+.deadline {
+  color: #b22222; /* firebrick red */
+  font-weight: bold;
+}
+
 /* Make sure the name in the navbar isn't bolded */
 .navbar-name {
   font-weight: 400 !important;
@@ -147,3 +152,41 @@ h2.bibliography {
   height: auto;
   border-radius: 6px;
 }
+
+/* Row of collaborator logos */
+.logos-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 1.5em 0;
+}
+
+.logos-row img {
+  height: 55px;
+  opacity: 0.9;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.logos-row img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .logos-row img {
+    height: 45px;
+  }
+}
+
+/* --- Individual scaling knobs --- */
+.logo.ua       { height: 65px; }   /* Arizona a bit tall */
+.logo.afrl     { height: 38px; }   /* too visually heavy */
+.logo.cu       { height: 48px; }   /* CU smaller logo */
+.logo.lasp     { height: 60px; }   /* skinny aspect ratio */
+.logo.nasa     { height: 62px; }   /* very circular */
+.logo.jpl      { height: 38px; }   /* too visually heavy */
+.logo.blueorigin { height: 65px; } /* okay baseline */
+.logo.polimi   { height: 82px; }   /* circular seal */
+.logo.mit      { height: 38px; }   /* dense shape */
